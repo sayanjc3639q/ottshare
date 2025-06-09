@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OTT Share – Affordable Shared OTT Subscriptions</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <meta name="description" content="Get Netflix, Prime Video, Spotify & more at the lowest prices with secure shared OTT plans. Start saving today!"/>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="OTT Share Logo" height="40"/>
+      <span>OTT Share</span>
+    </div>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#howitworks">How it Works</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Save Big on OTT Subscriptions</h1>
+      <p>Access Netflix, Prime Video, Spotify, YouTube Premium & more – at a fraction of the price. Safe, legal, and hassle-free group plans.</p>
+      <a href="#plans" class="btn-primary">Start Saving</a>
+    </div>
+    <div class="hero-banner">
+      <!-- Placeholder for internal promotion/advertise banner -->
+      <img src="banner.png" alt="OTT Entertainment Banner"/>
+    </div>
+  </section>
+
+  <!-- Featured OTT Plans -->
+  <section class="plans-section" id="plans">
+    <h2>Featured OTT Plans</h2>
+    <div class="plans-grid" id="plansGrid">
+      <!-- Plan cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="how-it-works" id="howitworks">
+    <h2>How it Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="icon">
+          <!-- SVG icon: Group -->
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" stroke="#0097a7" stroke-width="2"/><ellipse cx="12" cy="17" rx="7" ry="4" stroke="#1565c0" stroke-width="2"/></svg>
+        </div>
+        <h3>1. Choose Plan</h3>
+        <p>Select your favorite OTT plan at the best group rate.</p>
+      </div>
+      <div class="step">
+        <div class="icon">
+          <!-- SVG icon: Lock -->
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="9" rx="2" stroke="#1565c0" stroke-width="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4" stroke="#0097a7" stroke-width="2"/></svg>
+        </div>
+        <h3>2. Secure Payment</h3>
+        <p>Pay securely & get instant confirmation via WhatsApp.</p>
+      </div>
+      <div class="step">
+        <div class="icon">
+          <!-- SVG icon: Play -->
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#0097a7" stroke-width="2"/><polygon points="10,8 16,12 10,16" fill="#1565c0"/></svg>
+        </div>
+        <h3>3. Start Watching</h3>
+        <p>Get access & enjoy your favorite shows instantly!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terms & Conditions -->
+  <section class="terms" id="terms">
+    <h2>Terms & Conditions</h2>
+    <ul>
+      <li>All plans are shared legally, with user privacy and security ensured.</li>
+      <li>Once payment is made, access details will be shared via WhatsApp within 10 minutes.</li>
+      <li>Plans are valid for the specified period; renewals available.</li>
+      <li>Strictly no sharing of access outside your group.</li>
+      <li>Support available 10AM–10PM IST via WhatsApp & Email.</li>
+    </ul>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-accordion" id="faqAccordion">
+      <!-- FAQ items injected by JS -->
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-methods">
+      <a href="https://wa.me/919339183910" target="_blank" class="contact-btn whatsapp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="24"/> WhatsApp Support
+      </a>
+      <a href="mailto:ottsubscriptionallinone@gmail.com" class="contact-btn email">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="24"/> Give Feedback
+      </a>
+    </div>
+  </section>
+
+  <!-- Modal for Plan Order -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <h3>Place Order</h3>
+      <p>To proceed, please agree to our <a href="#terms">Terms & Conditions</a>.</p>
+      <label class="checkbox-label">
+        <input type="checkbox" id="agreeTerms"/>
+        I agree to the Terms & Conditions.
+      </label>
+      <button class="btn-primary" id="whatsappRedirect" disabled>Continue on WhatsApp</button>
+      <p class="modal-note">You’ll be redirected to WhatsApp to complete your order.</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
